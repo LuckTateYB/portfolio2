@@ -23,55 +23,89 @@ function App() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-3">
         <Hero />
 
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
-          <SectionCard
-            title="About"
-            image={about}
-            isExpanded={expandedSection === 'about'}
-            onToggle={() => toggleSection('about')}
+        <motion.div
+          className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.75, ease: 'easeOut' }}
+        >
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.05 }}
           >
-            <About
+            <SectionCard
+              title="About"
+              image={about}
               isExpanded={expandedSection === 'about'}
               onToggle={() => toggleSection('about')}
-            />
-          </SectionCard>
+            >
+              <About
+                isExpanded={expandedSection === 'about'}
+                onToggle={() => toggleSection('about')}
+              />
+            </SectionCard>
+          </motion.div>
 
-          <SectionCard
-            title="Projects"
-            image={projects}
-            isExpanded={expandedSection === 'projects'}
-            onToggle={() => toggleSection('projects')}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <Projects
+            <SectionCard
+              title="Projects"
+              image={projects}
               isExpanded={expandedSection === 'projects'}
               onToggle={() => toggleSection('projects')}
-            />
-          </SectionCard>
+            >
+              <Projects
+                isExpanded={expandedSection === 'projects'}
+                onToggle={() => toggleSection('projects')}
+              />
+            </SectionCard>
+          </motion.div>
 
-          <SectionCard
-            title="Tech Stack"
-            image={Stack}
-            isExpanded={expandedSection === 'techstack'}
-            onToggle={() => toggleSection('techstack')}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.15 }}
           >
-            <TechStack
+            <SectionCard
+              title="Tech Stack"
+              image={Stack}
               isExpanded={expandedSection === 'techstack'}
               onToggle={() => toggleSection('techstack')}
-            />
-          </SectionCard>
+            >
+              <TechStack
+                isExpanded={expandedSection === 'techstack'}
+                onToggle={() => toggleSection('techstack')}
+              />
+            </SectionCard>
+          </motion.div>
 
-          <SectionCard
-            title="Community"
-            image={community}
-            isExpanded={expandedSection === 'community'}
-            onToggle={() => toggleSection('community')}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <Community
+            <SectionCard
+              title="Community"
+              image={community}
               isExpanded={expandedSection === 'community'}
               onToggle={() => toggleSection('community')}
-            />
-          </SectionCard>
-        </div>
+            >
+              <Community
+                isExpanded={expandedSection === 'community'}
+                onToggle={() => toggleSection('community')}
+              />
+            </SectionCard>
+          </motion.div>
+        </motion.div>
 
       <AnimatePresence>
         {expandedSection && (

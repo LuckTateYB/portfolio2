@@ -11,25 +11,31 @@ const techCategories = [
     title: 'Frontend',
     icon: Code,
     color: 'blue',
-    skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Framer Motion', 'Vue.js'],
+    skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Framer Motion', 'Angular'],
   },
   {
     title: 'Backend',
     icon: Database,
     color: 'amber',
-    skills: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'Redis', 'GraphQL'],
+    skills: ['Node.js', 'Java', 'PostgreSQL', 'MongoDB', 'Redis', 'GraphQL'],
   },
   {
     title: 'DevOps & Cloud',
     icon: Cloud,
     color: 'slate',
-    skills: ['Docker', 'AWS', 'Vercel', 'GitHub Actions', 'Nginx', 'Linux'],
+    skills: ['Docker', 'AWS', 'Vercel', 'Azure', 'Nginx', 'Linux'],
   },
   {
     title: 'Tools & Methods',
     icon: Wrench,
     color: 'blue',
     skills: ['Git', 'Agile', 'TDD', 'CI/CD', 'Microservices', 'REST APIs'],
+  },
+  {
+    title: 'IA & Data Science',
+    icon: Wrench,
+    color: 'blue',
+    skills: ['Python', 'Claude', 'Github Copilot', 'Agents', 'MCP', 'Data Analysis'],
   },
 ];
 

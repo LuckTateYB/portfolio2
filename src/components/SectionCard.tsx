@@ -13,10 +13,10 @@ const SectionCard = ({ title, image, isExpanded, onToggle, children }: SectionCa
   return (
     <div className="rounded-lg shadow-lg bg-white overflow-hidden">
       <div
-        className="relative h-40 bg-cover bg-center"
+        className="relative h-70 bg-cover bg-center"
         style={{ backgroundImage: `url(${image})` }}
       >
-        <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-black to-transparent" />
         <button
           onClick={onToggle}
           aria-label={`Toggle ${title}`}

@@ -58,7 +58,7 @@ export default function Community({ isExpanded, onToggle }: CommunityProps) {
                 <Award className="w-8 h-8" />
                 <div>
                   <h3 className="text-2xl font-bold">Fundador & Vicepresidente</h3>
-                  <p className="text-blue-100">Comunidad Universitaria de Desarrollo</p>
+                  <p className="text-blue-100">Capítulo Universitario LEAD UPN</p>
                 </div>
               </div>
               <p className="text-blue-50 leading-relaxed mb-4">
@@ -67,11 +67,11 @@ export default function Community({ isExpanded, onToggle }: CommunityProps) {
               </p>
               <div className="grid md:grid-cols-3 gap-4 mt-6">
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                  <div className="text-3xl font-bold">150+</div>
+                  <div className="text-3xl font-bold">50+</div>
                   <div className="text-blue-100 text-sm">Miembros Activos</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                  <div className="text-3xl font-bold">30+</div>
+                  <div className="text-3xl font-bold">20+</div>
                   <div className="text-blue-100 text-sm">Workshops & Eventos</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
